@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Fira Code", monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+button {
+  background-color: unset;
+  border: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+header .header_container {
+  max-width: 90%;
+  min-width: 90%;
+  margin: auto 0;
+  padding: 25px 0;
+}
+
+/*# sourceMappingURL=header_style.css.map */

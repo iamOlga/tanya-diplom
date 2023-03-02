@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Catalog</title>
+
+    <link rel="stylesheet" href="style/header_style.css">
+    <link rel="stylesheet" href="style/footer_style.css">
+    <link rel="stylesheet" href="style/catalog_style.css">
+</head>
+<body>
+  <header>
+      <div class="header_container">
+          <img src="images/Logo.svg" alt="Logo" class="logo">
+      </div>
+  </header>
+
+    <section>
+        <div class="filter_panel_container">
+            <div class="filter_buttons_container">
+                <div id="filter_buttons" class="filter_buttons">
+                    <button class="filter_button" onclick="btn_filter_click(this)">#dji</button>
+                    <button class="filter_button" onclick="btn_filter_click(this)">#altair</button>
+                    <button class="filter_button" onclick="btn_filter_click(this)">#autel</button>
+                </div>
+            </div>
+            <div class="filter_selections_container">
+                <div id="filter_selections" class="filter_selections">
+                    <button class="filter_selection" onclick="btn_selection_click(this)">
+                        <img src="images/dron-img-1.png" alt="dron">
+                        <p>#dji_mavic</p>
+                    </button>
+                    <button class="filter_selection" onclick="btn_selection_click(this)">
+                        <img src="images/dron-img-1.png" alt="dron">
+                        <p>#dji_air</p>
+                    </button>
+                    <button class="filter_selection" onclick="btn_selection_click(this)">
+                        <img src="images/dron-img-1.png" alt="dron">
+                        <p>#dji_mini</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+      <div class="sort_container">
+          <div class="current_filters_container">
+              <button class="current_filter">#dji <span class="remove_filter"> <img src="images/Сross.svg"></span></button>
+          </div>
+        <div class="option_container">
+            <select class="select" name="language">
+                <option disabled>сортировка цены по ...</option>
+                <option value="HTML">сортировка цены по убыванию</option>
+                <option value="JavaScript">сортировка цены по возрастанию</option>
+            </select>
+        </div>
+      </div>
+    </section>
+
+    <section>
+        <div class="items_container">
+            <div class="item">
+                <img src="images/dron-img-2.jpg" alt="">
+                <div class="item-info">
+                    <div class="item-info-header">
+                        <p class="title">#DJI_mini_3</p>
+                        <p class="price">USD $559</p>
+                    </div>
+                    <p class="item-description">
+                        Under 249 g | Extended Battery Life | 4K HDR Video | True Vertical Shooting | Intelligent Features | 38kph (Level 5) Wind Resistance
+                    </p>
+                </div>
+                <div class="button_container">
+                    <a href="" class="button">подробнее <img src="images/Arrow.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+  <footer>
+      <div class="footer_container">
+          <div class="footer_column">
+              <img src="images/Logo.svg" alt="Logo" class="logo">
+              <p class="copyright">Copyright ©Coptermarket 2014-2023</p>
+          </div>
+          <div class="footer_column">
+              <div class="footer_column_row">
+                  <a href="" class="link">youtube</a>
+                  <a href="" class="link">instagram</a>
+                  <a href="" class="link">Telegram</a>
+              </div>
+              <div class="footer_column_row">
+                  <p>+375000000000</p>
+                  <p>name@gmail.com</p>
+              </div>
+          </div>
+          <div class="footer_column">
+              <div class="footer_column_row">
+                  <a href="" class="link">главная</a>
+                  <a href="" class="link">каталог</a>
+                  <a href="" class="link">о нас</a>
+                  <a href="" class="link">доставка и оплата</a>
+                  <a href="" class="link">личный кабинет</a>
+              </div>
+              <div class="footer_column_row">
+                  <a href="" class="link">войти</a>
+                  <a href="" class="link">зарегистрироваться</a>
+              </div>
+          </div>
+      </div>
+
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

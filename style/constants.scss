@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+
+$color-blue: #2E5CFE;
+$color-dark: #1E1E1E;
+
+$color-light-gray: #ECE9E9;
+$color-medium-gray: #D9D9D9;
+$color-dark-gray: #626262;
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Fira Code', monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+button{
+  background-color: unset;
+  border: none;
+}
+
+
+
+@mixin main-button {
+  color: $color-blue;
+  font-size: 18px;
+  text-transform: lowercase;
+  font-weight: 500;
+  padding: 6px 20px;
+  border-bottom: 2px solid $color-blue;
+}
+
