@@ -26,6 +26,7 @@ header .header_container {
   min-width: 90%;
   margin: auto 0;
   padding: 25px 0;
+  display: flex;
 }
 
 /*# sourceMappingURL=header_style.css.map */

@@ -30,6 +30,23 @@ footer .footer_container {
   flex-direction: row;
   justify-content: space-between;
 }
+@media (max-width: 850px) {
+  footer .footer_container {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+footer .footer_container .footer_info {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+}
+@media (max-width: 850px) {
+  footer .footer_container .footer_info {
+    width: 100%;
+    gap: 50px;
+  }
+}
 footer .footer_container .footer_column {
   display: flex;
   flex-direction: column;
@@ -39,13 +56,19 @@ footer .footer_container .footer_column {
   font-size: 14px;
   text-transform: uppercase;
   height: 220px;
+  width: 50%;
 }
 footer .footer_container .footer_column img {
   width: 251px;
 }
 footer .footer_container .footer_column .copyright {
-  font-size: 12;
+  font-size: 12px;
   text-transform: none;
+}
+@media (max-width: 850px) {
+  footer .footer_container .footer_column .copyright {
+    display: none;
+  }
 }
 footer .footer_container .footer_column .footer_column_row {
   display: flex;
@@ -55,6 +78,53 @@ footer .footer_container .footer_column .footer_column_row {
 }
 footer .footer_container .footer_column .footer_column_row a {
   color: #1E1E1E;
+}
+@media (max-width: 850px) {
+  footer .footer_container .footer_column .footer_column_row a {
+    text-align: center;
+  }
+}
+@media (max-width: 850px) {
+  footer .footer_container .column-right {
+    align-items: flex-end;
+  }
+}
+@media (max-width: 850px) {
+  footer .footer_container .column-right .footer_column_row a {
+    text-align: end;
+  }
+}
+@media (max-width: 850px) {
+  footer .footer_container .column-left {
+    align-items: flex-start;
+  }
+}
+@media (max-width: 850px) {
+  footer .footer_container .column-left .footer_column_row a {
+    text-align: start;
+  }
+}
+footer .footer_container .footer_column-logo {
+  width: 40%;
+}
+@media (max-width: 850px) {
+  footer .footer_container .footer_column-logo {
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+}
+footer .copyright2 {
+  display: none;
+}
+@media (max-width: 850px) {
+  footer .copyright2 {
+    display: inline;
+    font-size: 12px;
+    text-transform: none;
+    padding-top: 26px;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=footer_style.css.map */

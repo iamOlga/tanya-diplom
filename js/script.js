@@ -120,3 +120,72 @@ $('.select').each(function() {
         }
     });
 });
+
+
+
+$(document).ready(function() {
+    window.addEventListener('resize', (e) => {
+        checkWidth();
+    });
+    function checkWidth() {
+        var windowWidth = $('body').innerWidth(),
+            elem = $(".similars .slider"); // лучше сохранять объект в переменную, многократно чтобы не насиловать
+        // страницу для поиска нужного элемента
+        if(windowWidth >= 1200){
+            elem.removeClass('multiple-items2');
+            elem.removeClass('multiple-items1');
+        }
+        else if(windowWidth < 1200 && windowWidth >= 800){
+            elem.addClass('multiple-items2');
+            elem.removeClass('multiple-items1');
+
+            $('.multiple-items2').slick({
+                infinite: true,
+                dots: true,
+                slidesToShow: 2,
+                slidesToScroll: 1
+            });
+        }
+        else if(windowWidth < 800){
+            elem.removeClass('multiple-items2');
+            elem.addClass('multiple-items1');
+
+            $('.multiple-items1').slick({
+                infinite: true,
+                dots: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        }
+
+    }
+
+    checkWidth(); // проверит при загрузке страницы
+
+    $(window).resize(function(){
+        checkWidth(); // проверит при изменении размера окна клиента
+    });
+});
+
+
+
+
+function btn_trigger(el) {
+    let parent = el.parentNode;
+    let trigger_div = parent.lastElementChild;
+    let arrow = el.lastElementChild;
+
+    if (trigger_div.classList.contains("subMenuTip-block")){
+        trigger_div.classList.remove('subMenuTip-block');
+        trigger_div.classList.add('subMenuTip-none');
+        arrow.classList.remove('arrow_on');
+        arrow.classList.add('arrow_off');
+    }
+    else{
+        trigger_div.classList.remove('subMenuTip-none');
+        trigger_div.classList.add('subMenuTip-block');
+        arrow.classList.remove('arrow_ffn');
+        arrow.classList.add('arrow_on');
+    }
+
+}
