@@ -115,7 +115,7 @@ section {
   width: 130px !important;
 }
 .item_container .item_info .slider_container .slider-nav .slick-current {
-  border: 2px solid #D9D9D9;
+  border: 2px solid #dedede;
 }
 .item_container .item_info .info {
   width: 50%;
@@ -169,7 +169,7 @@ section {
 .item_container .item_info .info .price_info a {
   font-size: 18px;
   font-weight: 500;
-  color: #ECE9E9;
+  color: #f6f3f3;
   padding: 8px 20px;
   background-color: #2E5CFE;
   border: 2px solid #2E5CFE;
@@ -348,7 +348,7 @@ section {
 }
 .equipments_container .equipments_info .equipment_item .item_img {
   width: 270px;
-  background-color: #ECE9E9;
+  background-color: #f6f3f3;
   display: flex;
 }
 @media (max-width: 1215px) {

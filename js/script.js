@@ -189,3 +189,66 @@ function btn_trigger(el) {
     }
 
 }
+
+function btn_show_filers(el) {
+    let parent_cont = el.parentNode.parentNode.parentNode;
+    let filters_container = parent_cont.lastElementChild;
+    let arrow = el.lastElementChild;
+
+    if(filters_container.classList.contains("filters_container-block")){
+        filters_container.classList.remove('filters_container-block');
+        filters_container.classList.add('filters_container-none');
+        arrow.classList.remove('arrow_on');
+        arrow.classList.add('arrow_off');
+    }
+    else{
+        filters_container.classList.remove('filters_container-none');
+        filters_container.classList.add('filters_container-block');
+        arrow.classList.remove('arrow_ffn');
+        arrow.classList.add('arrow_on');
+    }
+
+}
+
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+    output.innerHTML = this.value;
+}
+
+
+function btn_count_plus(el){
+
+    let text_el = el.parentNode.querySelector('p').textContent;
+    let new_value = Number(text_el)+1;
+    el.parentNode.querySelector('p').textContent = new_value;
+
+    // тут брать цену из бд
+    let item_price = 599;
+    let new_price = Number(item_price)*new_value;
+    el.parentNode.parentNode.lastElementChild.lastElementChild.textContent = new_price;
+}
+
+function btn_count_minus(el){
+    let text_el = el.parentNode.querySelector('p').textContent;
+
+    let price = el.parentNode.parentNode.lastElementChild.lastElementChild.textContent;
+    // тут брать цену из бд
+    let item_price = 599;
+
+    let new_value;
+    let new_price;
+    if(text_el>1){
+        new_value = Number(text_el)-1;
+        new_price = price-item_price;
+    }
+    else{
+        new_value = 1;
+        new_price = price;
+    }
+
+    el.parentNode.querySelector('p').textContent = new_value;
+    el.parentNode.parentNode.lastElementChild.lastElementChild.textContent = new_price;
+}

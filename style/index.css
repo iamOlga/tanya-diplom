@@ -251,7 +251,7 @@ section {
   }
 }
 .peculiarities_container .peculiarities .block .peculiarity_item {
-  background-color: #ECE9E9;
+  background-color: #f6f3f3;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -466,7 +466,7 @@ section {
   padding: 25px 0;
   display: flex;
   justify-content: space-between;
-  color: #ECE9E9;
+  color: #f6f3f3;
   align-items: flex-end;
   height: 100%;
   padding-bottom: 80px;

@@ -16,47 +16,79 @@
       </div>
   </header>
 
-    <section>
-        <div class="filter_panel_container">
-            <div class="filter_buttons_container">
-                <div id="filter_buttons" class="filter_buttons">
-                    <button class="filter_button" onclick="btn_filter_click(this)">#dji</button>
-                    <button class="filter_button" onclick="btn_filter_click(this)">#altair</button>
-                    <button class="filter_button" onclick="btn_filter_click(this)">#autel</button>
-                </div>
-            </div>
-            <div class="filter_selections_container">
-                <div id="filter_selections" class="filter_selections">
-                    <button class="filter_selection" onclick="btn_selection_click(this)">
-                        <img src="images/dron-img-1.png" alt="dron">
-                        <p>#dji_mavic</p>
-                    </button>
-                    <button class="filter_selection" onclick="btn_selection_click(this)">
-                        <img src="images/dron-img-1.png" alt="dron">
-                        <p>#dji_air</p>
-                    </button>
-                    <button class="filter_selection" onclick="btn_selection_click(this)">
-                        <img src="images/dron-img-1.png" alt="dron">
-                        <p>#dji_mini</p>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section>
       <div class="sort_container">
-          <div class="current_filters_container">
-              <button class="current_filter">#dji <span class="remove_filter"> <img src="images/Сross.svg"></span></button>
+          <div class="filters_button_container">
+              <a class="btn_show_filers" onclick="btn_show_filers(this)">фильтрация <span class="arrow arrow_off"></span></a>
           </div>
-        <div class="option_container">
+          <div class="option_container">
             <select class="select" name="language">
                 <option disabled>сортировка цены по ...</option>
                 <option value="HTML">сортировка цены по убыванию</option>
                 <option value="JavaScript">сортировка цены по возрастанию</option>
             </select>
-        </div>
+          </div>
       </div>
+        <div id='filters_container' class="filters_container-block">
+            <div class="filter_cont">
+                <p class="filter_name">FILTER 1</p>
+                <div class="checkbox-1">
+                    <div class="checkbox-value">
+                        <input type="checkbox" class="custom-checkbox" id="v1" name="v1" value="1">
+                        <label for="v1">value 1</label>
+                    </div>
+                    <div class="checkbox-value">
+                        <input type="checkbox" class="custom-checkbox" id="v2" name="v2" value="2">
+                        <label for="v2">value 1</label>
+                    </div>
+                    <div class="checkbox-value">
+                        <input type="checkbox" class="custom-checkbox" id="v3" name="v3" value="3">
+                        <label for="v3">value 1</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter_cont">
+                <p class="filter_name">FILTER 2</p>
+                <div class="toggle_cont">
+                    <div class="form_toggle">
+                        <div class="form_toggle-item item-1">
+                            <input id="fid-1" type="radio" name="radio" value="off" checked>
+                            <label for="fid-1">OFF</label>
+                        </div>
+                        <div class="form_toggle-item item-2">
+                            <input id="fid-2" type="radio" name="radio" value="on">
+                            <label for="fid-2">ON</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter_cont">
+                <p class="filter_name">FILTER 3</p>
+                <div class="radio_cont">
+                    <label>
+                        Первый
+                        <input type="radio" class="modern-radio" value="1" name="a">
+                        <span></span>
+                    </label>
+                    <label>
+                        Второй
+                        <input type="radio" class="modern-radio" value="2" name="a">
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter_cont">
+                <p class="filter_name">FILTER 4</p>
+                <div class="slider_cont">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    <p>Value: <span id="demo"></span></p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section>

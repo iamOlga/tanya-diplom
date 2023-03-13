@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="style/header_style.css">
+    <link rel="stylesheet" href="style/footer_style.css">
+    <link rel="stylesheet" href="style/cart_style.css">
+
+</head>
+<body>
+    <header>
+        <div class="header_container">
+            <img src="images/Logo.svg" alt="Logo" class="logo">
+        </div>
+    </header>
+
+    <section>
+        <div class="cart_container">
+            <div class="cart_items">
+                <div class="h2_cont">
+                    <h2>Корзина</h2>
+                    <h2 class="count_items"> 3 шт.</h2>
+                </div>
+
+                <div class="items_container">
+                    <div class="u-repeater u-repeater-1">
+                        <div class="item">
+                            <img class="item_img" src="images/dron-img-2.jpg" alt="">
+                            <div class="item-info">
+                                <div class="item-info-header">
+                                    <p class="title">#DJI_mini_3</p>
+                                </div>
+                                <div class="count_price_cont">
+                                    <div class="count_cont">
+                                        <button onclick="btn_count_minus(this)" class="count">-</button>
+                                        <p class="count_text">1</p>
+                                        <button onclick="btn_count_plus(this)" class="count">+</button>
+                                    </div>
+                                    <p class="price">USD $<span>559</span></p>
+                                </div>
+                            </div>
+                            <div class="button_container">
+                                <a href="" class="button">подробнее <img src="images/Arrow.svg" alt=""></a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img class="item_img" src="images/dron-img-2.jpg" alt="">
+                            <div class="item-info">
+                                <div class="item-info-header">
+                                    <p class="title">#DJI_mini_3</p>
+                                </div>
+                                <div class="count_price_cont">
+                                    <div class="count_cont">
+                                        <button onclick="btn_count_minus(this)" class="count">-</button>
+                                        <p class="count_text">1</p>
+                                        <button onclick="btn_count_plus(this)" class="count">+</button>
+                                    </div>
+                                    <p class="price">USD $<span>559</span></p>
+                                </div>
+                            </div>
+                            <div class="button_container">
+                                <a href="" class="button">подробнее <img src="images/Arrow.svg" alt=""></a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img class="item_img" src="images/dron-img-2.jpg" alt="">
+                            <div class="item-info">
+                                <div class="item-info-header">
+                                    <p class="title">#DJI_mini_3</p>
+                                </div>
+                                <div class="count_price_cont">
+                                    <div class="count_cont">
+                                        <button onclick="btn_count_minus(this)" class="count">-</button>
+                                        <p class="count_text">1</p>
+                                        <button onclick="btn_count_plus(this)" class="count">+</button>
+                                    </div>
+                                    <p class="price">USD $<span>559</span></p>
+                                </div>
+                            </div>
+                            <div class="button_container">
+                                <a href="" class="button">подробнее <img src="images/Arrow.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order_container">
+                <div class="h2_cont">
+                    <h2>Оформление</h2>
+                </div>
+                <div class="order">
+                    <div class="row">
+                        <p>3 шт.</p>
+                        <p>USD $559</p>
+                    </div>
+                    <div class="column">
+                        <p>доставка</p>
+                        <div class="radio_cont">
+                            <label>
+                                курьер
+                                <input type="radio" class="modern-radio" value="1" name="a">
+                                <span></span>
+                            </label>
+                            <label>
+                                самовывоз
+                                <input type="radio" class="modern-radio" value="2" name="a">
+                                <span></span>
+                            </label>
+                        </div>
+                        <div class="button_container">
+                            <a href="" class="button">подробнее о доставке<img src="images/Arrow.svg" alt=""></a>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <p>промокод</p>
+                        <input class="promocode" type="text" placeholder="введите промокод">
+                        <button class="promocode_button">применить</button>
+                    </div>
+                </div>
+
+                <div class="to_order">
+                    <div class="row">
+                        <p>общая стоимость</p>
+                        <p>USD $559</p>
+                    </div>
+                    <a href="" class="slide_from_left">добавить в корзину</a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_column footer_column-logo">
+                <img src="images/Logo.svg" alt="Logo" class="logo">
+                <p class="copyright">Copyright ©Coptermarket 2014-2023</p>
+            </div>
+            <div class="footer_info">
+                <div class="footer_column column-right">
+                    <div class="footer_column_row">
+                        <a href="" class="link">youtube</a>
+                        <a href="" class="link">instagram</a>
+                        <a href="" class="link">Telegram</a>
+                    </div>
+                    <div class="footer_column_row">
+                        <p>+375000000000</p>
+                        <p>name@gmail.com</p>
+                    </div>
+                </div>
+                <div class="footer_column column-left">
+                    <div class="footer_column_row footer_column-mob-off">
+                        <a href="" class="link">главная</a>
+                        <a href="" class="link">каталог</a>
+                        <a href="" class="link">о нас</a>
+                        <a href="" class="link">доставка и оплата</a>
+                        <a href="" class="link">личный кабинет</a>
+                    </div>
+                    <div class="footer_column_row">
+                        <a href="" class="link">войти</a>
+                        <a href="" class="link">зарегистрироваться</a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright2">Copyright ©Coptermarket 2014-2023</p>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
