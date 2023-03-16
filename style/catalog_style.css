@@ -22,6 +22,26 @@ body {
   background-color: #F2F2F5;
 }
 
+.h2_cont {
+  display: flex;
+  padding-top: 50px;
+  margin: 0 0 0 8%;
+  font-family: Unbounded;
+  color: #2E5CFE;
+  font-size: 30px;
+  font-weight: bold;
+}
+@media (max-width: 490px) {
+  .h2_cont {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1230px) {
+  .h2_cont {
+    font-size: 24px;
+  }
+}
+
 .sort_container {
   display: flex;
   flex-direction: row;
@@ -136,6 +156,11 @@ body {
   flex-direction: row;
   gap: 60px;
 }
+@media (max-width: 700px) {
+  .filters_container-block {
+    flex-direction: column;
+  }
+}
 .filters_container-block .filter_cont {
   display: flex;
   flex-direction: column;
@@ -153,6 +178,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 6px;
+}
+@media (max-width: 700px) {
+  .filters_container-block .filter_cont .checkbox-1 {
+    flex-direction: row;
+  }
 }
 .filters_container-block .filter_cont .checkbox-1 .checkbox-value {
   /* стили при наведении курсора на checkbox */
@@ -244,6 +274,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 6px;
+}
+@media (max-width: 700px) {
+  .filters_container-block .filter_cont .radio_cont {
+    flex-direction: row;
+  }
 }
 .filters_container-block .filter_cont .radio_cont input {
   position: absolute;

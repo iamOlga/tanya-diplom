@@ -3,6 +3,21 @@ body{
   background-color: #F2F2F5;
 }
 
+.h2_cont{
+  display: flex;
+  padding-top: 50px;
+  margin: 0 0 0 8%;
+
+  @include h2;
+
+  @media (max-width: 1230px)
+  {
+    font-size: 24px;
+  }
+
+
+}
+
 
 .sort_container{
   display: flex;
@@ -139,6 +154,11 @@ body{
   flex-direction: row;
   gap: 60px;
 
+  @media (max-width: 700px)
+  {
+    flex-direction: column;
+  }
+
   .filter_cont{
     display: flex;
     flex-direction: column;
@@ -158,6 +178,11 @@ body{
       display: flex;
       flex-direction: column;
       gap: 6px;
+
+      @media (max-width: 700px)
+      {
+        flex-direction: row;
+      }
 
       .checkbox-value{
 
@@ -260,6 +285,11 @@ body{
       display: flex;
       flex-direction: column;
       gap: 6px;
+
+      @media (max-width: 700px)
+      {
+        flex-direction: row;
+      }
 
        input {
         position: absolute;

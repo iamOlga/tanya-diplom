@@ -1,10 +1,229 @@
 @import "constants";
 
-header{
+header {
   display: flex;
   justify-content: center;
+  background-color: #F2F2F5;
 
-  .header_container{
-    @include container ();
+  .header_container {
+    @include container();
+    justify-content: space-between;
+
+    .menu_cont {
+      width: 60px;
+      height: 60px;
+
+      .menu_button {
+        width: 100%;
+        height: 100%;
+        background-color: $color-blue;
+        position: relative;
+
+        .btn_el {
+          position: absolute;
+          height: 9px;
+          width: 9px;
+          background-color: $color-light-gray;
+          border-radius: 10px;
+
+
+          &-1 {
+            top: 12px;
+            left: 12px;
+            transition: .2s all;
+          }
+
+          &-2 {
+            top: 12px;
+            right: 12px;
+            transition: .4s all;
+          }
+
+          &-3 {
+            bottom: 12px;
+            left: 12px;
+            ransition: .4s all;
+          }
+
+          &-4 {
+            bottom: 12px;
+            right: 12px;
+            transition: .2s all;
+          }
+        }
+
+        &:hover {
+          .btn_el-1 {
+            top: 12px;
+            left: 7px;
+            width: 46px;
+          }
+
+          .btn_el-4 {
+
+            top: 36px;
+            right: 7px;
+            width: 46px;
+          }
+
+          .btn_el-2 {
+            opacity: 0;
+          }
+
+          .btn_el-3 {
+            opacity: 0;
+          }
+        }
+      }
+
+      .menu_button-on{
+        .btn_el-1 {
+          top: 24px;
+          left: 5px;
+          width: 50px;
+          transform: rotate(45deg);
+        }
+        .btn_el-4 {
+          top: 24px;
+          right: 5px;
+          width: 50px;
+          transform: rotate(-45deg);
+
+        }
+        .btn_el-2 {
+          opacity: 0;
+        }
+        .btn_el-3 {
+          opacity: 0;
+        }
+
+        &:hover{
+          .btn_el-1 {
+            top: 24px;
+            left: 5px;
+            width: 50px;
+            transform: rotate(45deg);
+          }
+          .btn_el-4 {
+            top: 24px;
+            right: 5px;
+            width: 50px;
+            transform: rotate(-45deg);
+
+          }
+          .btn_el-2 {
+            opacity: 0;
+          }
+          .btn_el-3 {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .header-fixed{
+    position: fixed;
+    background-color: #F2F2F5;
+    z-index: 999;
   }
 }
+
+  .dropdown_menu {
+    top: 110px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width:  100%;
+    background-color: #F2F2F5;
+    height: 86%;
+    z-index: 999;
+    margin: 0;
+
+
+    .menu_container{
+      max-width: 60%;
+      min-width: 60%;
+      margin: auto 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      @media (max-width: 850px)
+      {
+        max-width: 90%;
+        min-width: 90%;
+        margin: 60px;
+      }
+      @media (max-width: 600px)
+      {
+        margin: 30px;
+      }
+      @media (max-width: 500px)
+      {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        gap: 40px;
+      }
+
+
+      .menu_column{
+          display: flex;
+          flex-direction: column;
+          height: 360px;
+          justify-content: space-between;
+          color: $color-blue;
+          font-size: 16px;
+          font-weight: 500;
+          text-transform: uppercase;
+
+          @media (max-width: 850px)
+          {
+            height: 280px;
+            font-size: 14px;
+          }
+          @media (max-width: 500px)
+          {
+            height: auto;
+            gap: 20px;
+          }
+
+          .menu_block{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+
+
+            a{
+              color: $color-blue;
+
+              @media (max-width: 500px)
+              {
+                text-align: center;
+              }
+            }
+
+            p{
+              @media (max-width: 500px)
+              {
+                text-align: center;
+              }
+            }
+          }
+          .menu_items{
+            font-size: 20px;
+
+            @media (max-width: 600px)
+            {
+              font-size: 18px;
+            }
+          }
+        }
+    }
+  }
+  .dropdown_menu-off{
+    display: none;
+  }
+
+

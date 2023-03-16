@@ -252,3 +252,28 @@ function btn_count_minus(el){
     el.parentNode.querySelector('p').textContent = new_value;
     el.parentNode.parentNode.lastElementChild.lastElementChild.textContent = new_price;
 }
+
+
+
+
+function open_menu(el) {
+    let drop_menu = document.getElementById('drop_menu');
+    let header_container = document.getElementById('header_container');
+    let h2_cont = document.getElementById('h2_cont');
+
+    if(drop_menu.classList.contains("dropdown_menu")){
+        drop_menu.classList.remove('dropdown_menu');
+        drop_menu.classList.add('dropdown_menu-off');
+        header_container.classList.remove('header-fixed');
+        h2_cont.style.paddingTop = '50px'
+        el.classList.remove('menu_button-on');
+    }
+    else{
+        drop_menu.classList.remove('dropdown_menu-off');
+        drop_menu.classList.add('dropdown_menu');
+        header_container.classList.add('header-fixed');
+        h2_cont.style.paddingTop = '160px';
+        el.classList.add('menu_button-on');
+    }
+}
+
