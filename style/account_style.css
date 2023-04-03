@@ -184,7 +184,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.reg_aut_container .registration .button_container a {
+.reg_aut_container .registration .button_container a, .reg_aut_container .registration .button_container button {
   font-size: 18px;
   font-weight: 500;
   color: #f6f3f3;
@@ -196,15 +196,15 @@ body {
   overflow: hidden;
 }
 @media (max-width: 1000px) {
-  .reg_aut_container .registration .button_container a {
+  .reg_aut_container .registration .button_container a, .reg_aut_container .registration .button_container button {
     font-size: 16px;
     padding: 6px 16px;
   }
 }
-.reg_aut_container .registration .button_container a:hover {
+.reg_aut_container .registration .button_container a:hover, .reg_aut_container .registration .button_container button:hover {
   color: #3498db;
 }
-.reg_aut_container .registration .button_container a::after {
+.reg_aut_container .registration .button_container a::after, .reg_aut_container .registration .button_container button::after {
   content: "";
   background: #F2F2F5;
   position: absolute;

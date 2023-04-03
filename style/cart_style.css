@@ -389,7 +389,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.cart_container .order_container .to_order a {
+.cart_container .order_container .to_order a, .cart_container .order_container .to_order button {
   font-size: 18px;
   font-weight: 500;
   color: #f6f3f3;
@@ -401,15 +401,15 @@ body {
   overflow: hidden;
 }
 @media (max-width: 1000px) {
-  .cart_container .order_container .to_order a {
+  .cart_container .order_container .to_order a, .cart_container .order_container .to_order button {
     font-size: 16px;
     padding: 6px 16px;
   }
 }
-.cart_container .order_container .to_order a:hover {
+.cart_container .order_container .to_order a:hover, .cart_container .order_container .to_order button:hover {
   color: #3498db;
 }
-.cart_container .order_container .to_order a::after {
+.cart_container .order_container .to_order a::after, .cart_container .order_container .to_order button::after {
   content: "";
   background: #F2F2F5;
   position: absolute;

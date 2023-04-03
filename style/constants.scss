@@ -85,7 +85,7 @@ button{
 
 @mixin button_buy () {
 
-  a {
+  a, button {
     font-size: 18px;
     font-weight: 500;
     color: $color-light-gray;
@@ -102,10 +102,10 @@ button{
       padding: 6px 16px;
     }
   }
-  a:hover {
+  a:hover, button:hover {
     color: #3498db;
   }
-  a::after {
+  a::after, button::after {
     content: "";
     background: #F2F2F5;
     position: absolute;
