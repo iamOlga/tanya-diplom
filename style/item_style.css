@@ -166,7 +166,7 @@ section {
     font-size: 22px;
   }
 }
-.item_container .item_info .info .price_info a {
+.item_container .item_info .info .price_info a, .item_container .item_info .info .price_info button {
   font-size: 18px;
   font-weight: 500;
   color: #f6f3f3;
@@ -178,15 +178,15 @@ section {
   overflow: hidden;
 }
 @media (max-width: 1000px) {
-  .item_container .item_info .info .price_info a {
+  .item_container .item_info .info .price_info a, .item_container .item_info .info .price_info button {
     font-size: 16px;
     padding: 6px 16px;
   }
 }
-.item_container .item_info .info .price_info a:hover {
+.item_container .item_info .info .price_info a:hover, .item_container .item_info .info .price_info button:hover {
   color: #3498db;
 }
-.item_container .item_info .info .price_info a::after {
+.item_container .item_info .info .price_info a::after, .item_container .item_info .info .price_info button::after {
   content: "";
   background: #F2F2F5;
   position: absolute;
